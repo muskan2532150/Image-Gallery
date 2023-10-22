@@ -1,12 +1,13 @@
 import React from "react";
 import { imageThunk } from "../redux/imageSlice";
 import { useDispatch } from "react-redux";
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   const dispatch = useDispatch();
 
   return (
-    <nav className="bg-black p-4 text-white">
+    <nav className="bg-slate-800 p-4 text-white">
       <div className="container mx-auto flex items-center justify-between">
         <button
           onClick={() => dispatch(imageThunk())}
@@ -14,6 +15,7 @@ const Navbar = () => {
         >
           Imgfolio
         </button>
+        <ThemeToggle />
       </div>
     </nav>
   );
