@@ -15,12 +15,12 @@ const SearchInput = () => {
   };
 
   return (
-    <div className="w-1/2 mx-auto mt-8 p-4 dark:bg-dark bg-light text-dark dark:text-light  rounded-lg">
-      <div className="flex items-center border border-gray-300 rounded-lg shadow-sm">
+    <div className="w-1/2 mx-auto mt-8 p-4 rounded-lg">
+      <div className="flex items-center shadow-sm">
         <input
           type="text"
           placeholder="Search by Keyword"
-          className="w-full py-2 px-3 rounded-lg focus:outline-none"
+          className="w-full py-2 px-3 rounded-l-lg text-black focus:outline-none"
           value={query}
           onChange={handleInputChange}
         />
