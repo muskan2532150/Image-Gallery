@@ -15,8 +15,8 @@ const SearchInput = () => {
   };
 
   return (
-    <div className="w-1/2 mx-auto mt-8 p-4 bg-white rounded-lg shadow-md">
-      <div className="flex items-center border border-gray-300 rounded-lg">
+    <div className="w-1/2 mx-auto mt-8 p-4 dark:bg-dark bg-light text-dark dark:text-light  rounded-lg">
+      <div className="flex items-center border border-gray-300 rounded-lg shadow-sm">
         <input
           type="text"
           placeholder="Search by Keyword"
