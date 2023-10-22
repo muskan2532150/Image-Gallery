@@ -11,6 +11,7 @@ const ImageContainer = ({ images }) => {
                 <img
                   src={image.urls.regular}
                   alt={image.alt_description}
+                  loading="lazy"
                   className="h-full w-full object-cover object-center lg:h-full lg:w-full"
                 />
               </div>

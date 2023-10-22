@@ -14,10 +14,10 @@ export const imageThunk = createAsyncThunk("imageThunk", async () => {
 
 export const imageSearchThunk = createAsyncThunk(
   "imageSearchThunk",
-  async (username) => {
+  async (Keyword) => {
     const imgdata = await (
       await fetch(
-        `https://api.unsplash.com//search/photos?per_page=30&query=${username}&client_id=_dvCzg9Ec9lc77yMy3uSHg9KiwK-USjgbRKkXB63VSI`
+        `https://api.unsplash.com//search/photos?per_page=30&query=${Keyword}&client_id=_dvCzg9Ec9lc77yMy3uSHg9KiwK-USjgbRKkXB63VSI`
       )
     ).json();
     return imgdata.results;

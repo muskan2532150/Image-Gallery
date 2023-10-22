@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { imageSearchThunk } from "../redux/imageSlice";
 import { useDispatch } from "react-redux";
 
-const SearchInput = ({ onSearch }) => {
+const SearchInput = () => {
   const [query, setQuery] = useState("");
   const dispatch = useDispatch();
 
@@ -19,7 +19,7 @@ const SearchInput = ({ onSearch }) => {
       <div className="flex items-center border border-gray-300 rounded-lg">
         <input
           type="text"
-          placeholder="Search..."
+          placeholder="Search by Keyword"
           className="w-full py-2 px-3 rounded-lg focus:outline-none"
           value={query}
           onChange={handleInputChange}
