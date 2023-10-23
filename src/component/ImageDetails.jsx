@@ -16,11 +16,11 @@ const ImageDetails = () => {
 
   return (
     <div className="dark:bg-dark bg-light text-dark dark:text-light flex p-6 max-w-screen-xl mx-auto h-screen">
-      <div className="w-1/2 pr-4 h-screen">
+      <div className="w-1/2 pr-4">
         <img
           src={image.urls.full}
           alt={image.alt_description}
-          className="w-full object-cover object-center h-auto"
+          className="w-full object-cover object-center h-full"
         />
       </div>
 
